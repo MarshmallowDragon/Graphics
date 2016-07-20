@@ -1,0 +1,169 @@
+/**^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon *|
+\**^^^^^***^^^^^***^^^^^**/
+
+//for HFM's Graphics Project contest! Go check it out and enter. It ends on June 1st so hurry and get your entry in!!
+
+//1st page of the hotlist! Thank youuu everybody!! :) <3
+
+background(235, 248, 255);
+
+stroke(0, 150, 161);
+strokeWeight(7);
+fill(85, 212, 212);
+
+
+var unolegtransx = 260;
+var duolegtransx = 193;
+var dsbubbles = function(x,y){
+rotate(-50);
+noStroke();
+fill(155, 194, 191, 50);
+ellipse(x+1, y+-63, 100, 73);
+ellipse(x+59, y+-95, 30, 25);
+ellipse(x+97, y+-43, 49, 35);
+ellipse(x+-66, y+-95, 25, 20);
+ellipse(x+-94, y+-58, 30, 25);
+};
+
+
+//first tentacle
+
+translate(unolegtransx, duolegtransx);
+
+beginShape();
+curveVertex(-130,94); 
+curveVertex(-107,66); 
+curveVertex(-100,7); 
+curveVertex(-72,5); 
+curveVertex(-79,66); 
+curveVertex(-110,110); 
+curveVertex(-130,94); 
+curveVertex(-107,66); 
+curveVertex(-100,7);
+endShape();
+
+translate(-unolegtransx, -duolegtransx);
+
+
+//fourth tentacle
+translate(179, 208);
+beginShape();
+curveVertex(44,40); 
+curveVertex(41,-7); 
+curveVertex(58,-7); 
+curveVertex(69,32);
+curveVertex(90,77);
+curveVertex(72,94); 
+curveVertex(44,40); 
+curveVertex(41,-7); 
+curveVertex(58,-7);
+endShape();
+translate(-179, -209);
+
+
+//second tentacle
+beginShape();
+translate(unolegtransx-63, duolegtransx+10);
+curveVertex(-16,43); 
+curveVertex(-17,3); 
+curveVertex(11,-12); 
+curveVertex(9,59); 
+curveVertex(-2,104); 
+curveVertex(-27,102); 
+curveVertex(-16,43); 
+curveVertex(-17,3); 
+curveVertex(11,-12);
+endShape();
+
+
+//third tentacle
+translate(20, 8);
+beginShape();
+curveVertex(-15,49); 
+curveVertex(-13,-4); 
+curveVertex(5,-6); 
+curveVertex(13,41); 
+curveVertex(15,95); 
+curveVertex(-7,97); 
+curveVertex(-15,49); 
+curveVertex(-13,-4); 
+curveVertex(5,-6);
+endShape();
+translate(-20, -8);
+
+
+//main body
+translate(200, 209);
+beginShape();
+translate(-unolegtransx+63, -duolegtransx-10);
+curveVertex(-49,-85); 
+curveVertex(0,-106); 
+curveVertex(49,-85); 
+curveVertex(91,-19); 
+curveVertex(0,0); 
+curveVertex(-91,-19); 
+curveVertex(-49,-85); 
+curveVertex(0,-106); 
+curveVertex(49,-85);
+endShape();
+
+
+//light spots
+fill(196, 255, 250, 125);
+noStroke();
+rotate(-13);
+ellipse(2, -85, 25, 14);
+ellipse(31, -86, 12, 13);
+ellipse(19, -81, 7, 5);
+ellipse(14, -94, 7, 7);
+ellipse(-18, -91, 6, 5);
+rotate(13);
+
+//eyes and mouth
+fill(0, 0, 0);
+ellipse(-48, -33, 17, 17);
+ellipse(48, -33, 17, 17);
+stroke(13, 11, 56);
+strokeWeight(6);
+noFill();
+arc(6, -22, 21, 17, -1, 183);
+
+
+strokeWeight(3);
+stroke(108, 201, 204);
+fill(0, 225, 255, 50);
+beginShape();
+curveVertex(-37,-116); 
+curveVertex(37,-115); 
+curveVertex(112,-25); 
+curveVertex(84,7);
+curveVertex(94,22);
+curveVertex(76,46);
+curveVertex(45,29);
+curveVertex(18,45); 
+curveVertex(-4,25); 
+curveVertex(-30,48);
+curveVertex(-53,32);
+curveVertex(-76,48); 
+curveVertex(-94,22); 
+curveVertex(-84,7); 
+curveVertex(-112,-25);
+curveVertex(-37,-116); 
+curveVertex(37,-115); 
+curveVertex(112,-25);
+endShape();
+
+
+dsbubbles(10, 10);
+dsbubbles(84, 288);
+dsbubbles(158, 264);
+dsbubbles(251, 10);
+dsbubbles(138, -56);
+dsbubbles(-250, 113);
+rotate(-59);
+
+textFont("Times New Roman", 18);
+fill(0, 0, 0);
+text("Graphics Project #10: Kawaii Jellyfish", -186, -179, 400, 400);
+text("~M", 142, 142, 442, 442);
