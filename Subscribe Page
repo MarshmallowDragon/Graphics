@@ -1,0 +1,167 @@
+/**^^^^^***^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon Studios *|
+\**^^^^^***^^^^^***^^^^^***^^^^^**/
+
+//Credit to Light Runner for Marshmallow base/reference code!   https://www.khanacademy.org/computer-programming/marshmallow-free-background/5061245951934464
+
+//Let me know in tips/thanks if you subscribed! I'll add you to the list on the program page. :)
+
+//P.S. I wrote all this code by myself, I just recoded Light Runner's image of the marshmallow. But bigger.
+
+//Do you know how hard it is to code bezierVertex's by hand? HARD. XD
+
+var marshmallow = function(x, y){
+
+    stroke(125, 125, 125, 175);
+    strokeWeight(3);
+    fill(252, 252, 252);
+    rect(x-70, y-70, 140, 175, 30);//marshybase
+    
+    stroke(133, 133, 133);
+    ellipse (x, y-54, 135, 50);//top o' mallow white
+    noStroke();
+    
+    fill(255, 163, 250);
+    ellipse (x-30, y+7, 30, 8);//blushymallow
+    ellipse (x+30, y+7, 30, 8);
+    
+    fill(0, 0, 0);
+    ellipse (x-25, y-1, 25, 24);//cute-eyes black
+    ellipse (x+25, y-1, 25, 24);
+    fill(255, 255, 255);
+    ellipse (x-30, y-7, 5, 5);//cute-eyes white
+    ellipse (x+20, y-7, 5, 5);
+
+    noFill();
+    stroke(0, 0, 0);
+    strokeWeight(5);
+    arc(x-6, y-20, 51, 119, 70, 116);//aww-dorable mouth
+    arc(x+14, y-20, 51, 119, 65, 113);
+
+};
+
+var dragonWings = function(x, y){
+
+
+    stroke(0, 0, 0);
+    strokeWeight(4);
+    fill(82, 82, 82);
+    ellipse (155, 190, 30, 30);
+    ellipse (245, 190, 30, 30);
+
+   
+    fill(59, 59, 59);
+    beginShape();//left wing
+    vertex(83, 123);
+    bezierVertex(40, 156, 41, 193, 35, 213);
+    bezierVertex(62, 183, 75, 187, 88, 191);
+    bezierVertex(96, 193, 108, 223, 80, 248);
+    bezierVertex(85, 246, 110, 230, 135, 252);
+    bezierVertex(128, 208, 134, 198, 145, 180);
+    bezierVertex(113, 170, 89, 149, 83, 123);
+    endShape();
+    
+    fill(59, 59, 59);
+    stroke(0, 0, 0);
+    beginShape();//right wing
+    vertex(323, 123);
+    bezierVertex(331, 132, 357, 136, 370, 213);
+    bezierVertex(360, 189, 325, 189, 321, 194);
+    bezierVertex(314, 215, 318, 226, 330, 248);
+    bezierVertex(308, 226, 272, 246, 265, 252);
+    bezierVertex(270, 217, 262, 183, 258, 179);
+    bezierVertex(308, 175, 324, 134, 323, 123);
+    endShape();
+};
+
+var dragonPaws = function(x, y){
+    
+    fill(59, 59, 59);
+    beginShape();
+    rotate(10);
+    rect(x+185, y+253, 40, 40, 100);//left paw
+    rotate(-10);
+    endShape();
+    noStroke();
+    fill(0, 0, 0);
+    triangle(x+142, y+315, x+147, y+318, x+141, y+331);
+    triangle(x+156, y+318, x+150, y+318, x+152, y+335);
+    triangle(x+167, y+316, x+161, y+318, x+163, y+331);
+    
+    stroke(0, 0, 0);
+    fill(59, 59, 59);
+    beginShape();
+    rotate(-10);
+    rect(x+169, y+322, 40, 40, 100);//right paw
+    rotate(10);
+    endShape();
+    noStroke();
+    fill(0, 0, 0);
+    triangle(x+234, y+331, x+239, y+318, x+235, y+316);
+    triangle(x+246, y+333, x+249, y+318, x+244, y+318);
+    triangle(x+261, y+331, x+258, y+316, x+253, y+318);
+
+};
+
+var dragonTail = function(x, y){
+    
+strokeWeight(3);
+fill(59, 59, 59);
+quad (252, 325, 234, 330, 213, 365, 234, 360);
+
+fill(217, 0, 0);
+stroke(171, 0, 0);
+quad (266, 332, 237, 361, 250, 382, 270, 353);
+stroke(0, 0, 0);
+
+fill(59, 59, 59);
+strokeWeight(3);
+
+beginShape();
+curveVertex(x+87, y+30); 
+curveVertex(x+91, y+-9); 
+curveVertex(x+104, y+41); 
+curveVertex(x+53, y+99); 
+curveVertex(x+87, y+30); 
+curveVertex(x+91, y+-9); 
+curveVertex(x+104, y+41);
+endShape();
+};
+
+var subtext = function(){
+    
+    var f1 = createFont ("monospace");
+    textFont(f1);
+    textSize(60);
+    fill(255, 0, 0);
+    text ("SUBSCRIBE", 59, 32, 400, 400);
+    fill(0, 0, 0);
+    text ("SUBSCRIBE", 61, 30, 400, 400);
+    
+    textSize(15);
+    text ("Mouse over to see list of subscribers.", 49, 376, 400, 400);
+};
+
+var los = function(y){
+    var f = createFont("impact");
+    textFont(f);
+    textSize(18);
+    fill(0, 82, 12);
+    text("Known Subscribers: Light Runner, AquaOrchid, Flostin, #WW1FlyingAceSnoopy, \nJahreal, JerBear, ǰą¥Łɨɲɲ ƙƹŁŁ¥, Ausar Deville, Edw@rd 3lric, Marina Wilda, \nMy Name Is Kitty, Mohammed Amin, Deepak A., Amae3443, Devil's Reaper, \nFlying Cookie, Krisha Jain, SilverKiwi28, ComputerKat, Dexter Sebastian, \nEmily, Lionofgd, Sweets the Angel, Peter Calhoun, GeekGirl, 17.victoria.greever, CoffeeRanger, THEDUDE, 🐾HawkFeather🐾, Hana, Kira, Starlight, Anna14Love, StormClouds, The Doctress, Creeper 3000, Jake, baseballathlete108, ⚽︎☆⚾︎ Zach ⚾︎☆⚽, KhanKings, Zink︎, Faith, Duskpin Ultimate, Jeffrey Buglewicz, SportySmartGirl21, DiamondGirl704, HFM2402, Shadow Runner, Leafblaze", 4, y, 400, 400);
+
+};
+
+
+mouseOver = function(){
+background(230, 0, 0);
+los(15);
+};
+
+mouseOut = function(){
+background(189, 243, 255);
+dragonWings(0, -5);
+marshmallow(200, 195);
+dragonTail(181, 261);
+dragonPaws(0, -5);
+subtext();
+};
