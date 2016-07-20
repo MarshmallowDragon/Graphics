@@ -1,0 +1,100 @@
+/**^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon *|
+\**^^^^^***^^^^^***^^^^^**/
+
+//Haven't seen this movie yet, but it looks gooooooood. :D Well, at least the animation does. ^^
+
+//Thanks to SilverWisp for first vote!
+//Thanks to Krayoluuh for 50th vote!!
+
+background(88, 245, 219);
+
+noStroke();
+fill(67, 77, 66);
+ellipse(200, 384, 325, 17);
+
+fill(0, 191, 35);
+pushMatrix();
+translate(200,200);
+beginShape();
+curveVertex(-75,-89);
+curveVertex(-130,-117);
+curveVertex(-106,-150);
+curveVertex(-60,-153);
+curveVertex(-47,-122); 
+curveVertex(-34,10); 
+curveVertex(-33,10); 
+curveVertex(72,38); 
+curveVertex(118,120);
+curveVertex(149,121); 
+curveVertex(121,152); 
+curveVertex(97,132);
+curveVertex(62,77); 
+curveVertex(63,78); 
+curveVertex(69,113); 
+curveVertex(82,177); 
+curveVertex(66,186);
+curveVertex(45,185); 
+curveVertex(20,181); 
+curveVertex(19,130); 
+curveVertex(-6,131); 
+curveVertex(-30,130);
+curveVertex(-27,151); 
+curveVertex(-26,183); 
+curveVertex(-46,184);
+curveVertex(-56,184); 
+curveVertex(-72,185); 
+curveVertex(-81,184); 
+curveVertex(-84,151);
+curveVertex(-75,-89); 
+curveVertex(-130,-117); 
+curveVertex(-106,-150);
+endShape();
+popMatrix();
+
+fill(67, 77, 66);
+rect(100, 384, 200, 5);
+
+pushMatrix();
+scale(1/3);
+translate(436, 983);
+beginShape();
+curveVertex(-108,123); 
+curveVertex(-125,115); 
+curveVertex(-120,89); 
+curveVertex(-101,35); 
+curveVertex(-109,0); 
+curveVertex(-101,-23);
+curveVertex(-79,-28);
+curveVertex(-77,37); 
+curveVertex(-39,45); 
+curveVertex(-15,35); 
+curveVertex(-24,49); 
+curveVertex(-5,44);
+curveVertex(-10,59);
+curveVertex(-36,61);
+curveVertex(-73,64);
+curveVertex(-79,106);
+curveVertex(-77,144);
+curveVertex(-61,150);
+curveVertex(-64,170);
+curveVertex(-88,173);
+curveVertex(-113,169);
+curveVertex(-108,123);
+curveVertex(-125,115);
+curveVertex(-120,89);
+endShape();
+popMatrix();
+
+scale(1.1);
+translate(-16, 0);
+fill(0, 191, 35);
+textSize(23);
+var f = createFont("monospace");
+textFont(f);
+text("THE", 200, 75, 400, 400);
+text("___", 200, 75, 400, 400);
+textSize(44);
+text("GOOD", 245, 67, 400, 400);
+textSize(35);
+text("DINOSAUR", 199, 101, 400, 400);
