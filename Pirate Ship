@@ -1,0 +1,337 @@
+/**^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon *|
+\**^^^^^***^^^^^***^^^^^**/
+
+//Here's to Captain! For his upcoming game.
+
+//Thanks for all the votes guys! I really appreciate it. :)
+
+var waterGrad = function() {
+    for(var i = 0; i < height; i+=7){
+        strokeWeight(8);
+        var bla = color(26, 26, 26);
+        var blu = color(43, 63, 143);
+        stroke(lerpColor(blu, bla, i/height));
+        line(0, i, width, i);
+        }
+    };
+
+waterGrad();
+
+
+//waves
+stroke(43, 63, 143, 30);
+strokeWeight(2);
+noFill();
+
+for(var w = -36; w < 600; w+=7){
+arc(88, w, 249, 80, 45, 135);
+arc(268, w, 249, 80, 45, 135);
+arc(448, w, 249, 80, 45, 135);
+arc(626, w, 249, 80, 45, 135);
+}
+
+//color splotches
+noStroke();
+{
+var darkbrown = function() {fill(122, 66, 44);};
+var dbrowns = function() {stroke(102, 49, 28);};
+var lightbrown = function() {fill(133, 80, 45);};
+var lbrowns = function() {stroke(133, 80, 45);};
+var black = function() {fill(0, 0, 0);};
+var blacks = function() {stroke(0, 0, 0);};
+var transblue = function() {fill(204, 255, 255, 100);};
+var tblues = function() {stroke(204, 255, 255, 100);};
+var sand = function() {fill(179, 136, 50);};
+var shadow = function() {fill(0, 0, 0, 25);};
+var shadow2 = function() {fill(0, 0, 0, 50);};
+var darkdarkbrown = function() {fill(74, 40, 25);};
+var darkdarkdarkbrown = function() {fill(66, 35, 18);};
+}
+
+//masts
+var masts = function(){
+
+//front mast
+darkbrown();
+quad(412, 381, 386, 380, 451, 36, 450, 112);//front mast
+quad(510, 137, 532, 137, 375, 110, 393, 121);//cross piece
+shadow2();
+triangle(510, 137, 532, 137, 375, 110);
+triangle(450, 36, 412, 381, 450, 112);
+
+
+//middle mast
+darkbrown();
+quad(572, 411, 597, 394, 624, 9, 609, 80);
+shadow();
+quad(572, 411, 597, 394, 624, 9, 609, 80);
+darkbrown();
+quad(726, 131, 709, 119, 531, 101, 514, 106);
+shadow();
+quad(726, 131, 709, 119, 531, 101, 514, 106);
+shadow2();
+triangle(726, 131, 709, 119, 531, 101);
+
+};
+
+//pirate ship wreck graphic
+var piratewreck = function(){
+
+//bowsprit
+pushMatrix();
+rotate(6);
+translate(18, -28);
+beginShape();
+lightbrown();
+vertex(318, 387);
+bezierVertex(8, 361, -43, 349, -147, 320);
+bezierVertex(100, 357, 7, 330, 322, 371);
+endShape();
+beginShape();
+shadow();
+strokeWeight(2);
+vertex(318, 387);
+bezierVertex(8, 361, -43, 349, -147, 320);
+bezierVertex(100, 357, 7, 330, 322, 371);
+endShape();
+popMatrix();
+
+//brig base
+noStroke();
+lightbrown();
+pushMatrix();
+translate(304, 249);
+scale(1.5);
+beginShape();
+curveVertex(-146, 56); 
+curveVertex(-127, 78); 
+curveVertex(-109, 81); 
+curveVertex(-75, 68);
+curveVertex(-31, 74);
+curveVertex(117, 89);
+curveVertex(199, 95); 
+curveVertex(199, 100);
+curveVertex(199, 192); 
+curveVertex(197, 198); 
+curveVertex(137, 195); 
+curveVertex(24, 189); 
+curveVertex(-46, 182);
+curveVertex(-73, 152);
+curveVertex(-90, 118);
+curveVertex(-117, 100);
+curveVertex(-142, 77);
+curveVertex(-141, 60); 
+curveVertex(-127, 78); 
+curveVertex(-111, 81);
+endShape();
+popMatrix();
+
+//ship layer 2
+pushMatrix();
+scale(0.87);
+translate(76, 69);
+pushMatrix();
+quad(600, 546, 600, 432, 179, 374, 202, 525);
+strokeWeight(2);
+dbrowns();
+shadow();
+arc(477, 398, 682, 401, 137, 190);
+noFill();
+//outline and board lines
+arc(606, 371, 1177, 370, 109, 136);
+arc(591, 353, 1177, 370, 88, 136);
+arc(580, 338, 1177, 370, 87, 136);
+arc(573, 323, 1177, 370, 86, 136);
+arc(566, 305, 1177, 370, 86, 136);
+arc(562, 286, 1177, 370, 86, 136);
+arc(591, 267, 1262, 378, 89, 136);
+arc(591, 253, 1262, 378, 86, 136);
+noStroke();
+shadow();
+triangle(231, 537, 477, 398, 656, 417);
+popMatrix();
+popMatrix();
+
+//touch up ellipse
+pushMatrix();
+rotate(6);
+lightbrown();
+ellipse(487, 350, 507, 29);
+popMatrix();
+
+
+};
+
+//sand mostly
+var seafloor = function(){
+
+sand();
+quad(600, 600, 600, 546, 0, 489, 0, 600);
+
+shadow2();
+quad(600, 600, 600, 546, 0, 513, 479, 600);
+triangle(0, 512, 204, 549, 600, 500);
+
+
+};
+
+//extra details
+var extraDetails = function(){
+
+//ghosty drifty thingies...
+noFill();
+tblues();
+strokeWeight(2);
+strokeWeight(1.4);
+bezier(208, 338, 258, 299, 451, 180, 417, 123);
+bezier(202, 312, 273, 299, 424, 180, 409, 123);
+bezier(208, 338, 258, 299, 451, 180, 417, 124);
+bezier(276, 338, 258, 299, 448, 180, 421, 125);
+bezier(295, 365, 261, 317, 448, 169, 426, 126);
+bezier(70, 326, 300, 258, 389, 126, 379, 112);
+bezier(93, 333, 300, 258, 389, 126, 384, 117);
+bezier(103, 333, 300, 258, 401, 126, 389, 119);
+bezier(115, 364, 300, 258, 368, 111, 389, 118);
+bezier(148, 364, 300, 258, 396, 180, 401, 122);
+bezier(123, 373, 300, 258, 396, 140, 394, 121);
+
+bezier(449, 40, 433, 96, 386, 114, 377, 111);
+bezier(448, 51, 433, 96, 386, 114, 393, 112);
+bezier(446, 60, 433, 96, 409, 115, 401, 114);
+bezier(445, 67, 433, 96, 426, 115, 411, 116);
+
+bezier(523, 103, 569, 91, 598, 104, 622, 13);
+bezier(539, 102, 569, 91, 595, 115, 622, 23);
+bezier(551, 102, 592, 94, 595, 115, 622, 31);
+bezier(561, 104, 592, 99, 604, 115, 619, 49);
+
+bezier(522, 107, 536, 133, 361, 353, 313, 338);
+bezier(540, 109, 536, 135, 476, 247, 309, 366);
+bezier(548, 110, 536, 237, 497, 247, 317, 366);
+bezier(579, 114, 536, 203, 435, 247, 339, 371);
+bezier(568, 112, 536, 285, 408, 247, 352, 371);
+bezier(583, 114, 541, 299, 458, 247, 363, 375);
+bezier(593, 116, 541, 299, 458, 335, 381, 375);
+
+bezier(-67, 489, 81, 448, 72, 339, 68, 347);
+bezier(-26, 489, 82, 437, 70, 361, 76, 348);
+bezier(-12, 489, 87, 453, 70, 361, 85, 350);
+bezier(3, 489, 87, 453, 129, 385, 134, 360);
+bezier(3, 489, 85, 451, 108, 394, 110, 355);
+bezier(3, 489, 87, 453, 92, 369, 88, 353);
+bezier(37, 491, 87, 453, 92, 447, 125, 397);
+bezier(57, 494, 76, 466, 91, 470, 138, 406);
+bezier(63, 494, 76, 466, 91, 495, 138, 406);
+bezier(63, 494, 76, 488, 91, 495, 155, 415);
+bezier(82, 494, 106, 486, 124, 504, 169, 427);
+
+//hole in the hull
+fill(102, 49, 28);
+noStroke();
+quad(468, 540, 344, 533, 326, 463, 434, 489);
+quad(469, 540, 344, 533, 305, 506, 393, 450);
+quad(469, 540, 344, 533, 350, 506, 473, 504);
+
+pushMatrix();
+translate(42, 53);
+scale(0.9);
+darkdarkbrown();
+quad(468, 540, 344, 533, 326, 463, 434, 489);
+quad(469, 540, 344, 533, 305, 506, 393, 450);
+quad(469, 540, 344, 533, 350, 506, 473, 504);
+popMatrix();
+
+pushMatrix();
+translate(109, 134);
+scale(0.75);
+darkdarkdarkbrown();
+quad(468, 540, 344, 533, 326, 463, 434, 489);
+quad(469, 540, 344, 533, 305, 506, 393, 450);
+quad(469, 540, 344, 533, 350, 506, 473, 504);
+popMatrix();
+};
+
+//bubbles
+var bubbles = function(x, y){
+
+strokeWeight(3);
+stroke(0, 123, 255, 75);
+fill(209, 250, 255, 50);
+ellipse(x+100, y+100, 10, 10);
+ellipse(x+116, y+111, 10, 10);
+ellipse(x+93, y+123, 15, 15);
+ellipse(x+106, y+143, 10, 10);
+ellipse(x+124, y+132, 7, 7);
+ellipse(x+114, y+83, 7, 7);
+ellipse(x+133, y+161, 20, 20);
+ellipse(x+114, y+178, 12, 12);
+ellipse(x+100, y+162, 7, 7);
+ellipse(x+94, y+188, 7, 7);
+ellipse(x+131, y+198, 15, 15);
+ellipse(x+108, y+211, 13, 13);
+
+};
+
+//barnacles
+var barnacles = function(x,y){
+pushMatrix();
+fill(77, 47, 30);
+scale(0.07);
+translate(x, y);
+stroke(84, 58, 33);
+strokeWeight(22);
+beginShape();
+curveVertex(-67,-17); 
+curveVertex(8,-67); 
+curveVertex(83,-2); 
+curveVertex(55,73);
+curveVertex(-27,70); 
+curveVertex(-67,-17);
+curveVertex(8,-67); 
+curveVertex(83,-2); 
+endShape();
+popMatrix();
+noStroke();
+};
+
+pushMatrix();
+{
+masts();
+seafloor();
+piratewreck();
+extraDetails();
+barnacles(5000, 6659);
+barnacles(5320, 6542);
+barnacles(4677, 6773);
+barnacles(4600, 7044);
+barnacles(4470, 6824);
+barnacles(4468, 7267);
+barnacles(4694, 7414);
+barnacles(4527, 7510);
+barnacles(2513, 5500);
+barnacles(2582, 5860);
+barnacles(2388, 5743);
+barnacles(2286, 5502);
+barnacles(2365, 5293);
+barnacles(2606, 6075);
+barnacles(2724, 6306);
+barnacles(2684, 5670);
+barnacles(2802, 5447);
+barnacles(2990, 5614);
+barnacles(2879, 5810);
+
+
+pushMatrix();
+scale(1.2);
+bubbles(5, 44);
+scale(0.9);
+bubbles(292, 219);
+scale(1.1);
+bubbles(210, -127);
+popMatrix();
+}
+popMatrix();
+
+shadow();/**add a 2 to the end of shadow command for a darker overlay**/
+rect(0, 0, 600, 600);
