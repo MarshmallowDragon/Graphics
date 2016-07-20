@@ -1,0 +1,48 @@
+/**^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon *|
+\**^^^^^***^^^^^***^^^^^**/
+
+//For my brother, Z.
+
+//handle
+noStroke();
+fill(0, 0, 0);
+quad(211, 74, 209, 136, 191, 136, 189, 74);
+fill(48, 48, 48);
+triangle(208, 146, 191, 135, 189, 81);
+
+//blade
+noStroke();
+fill(194, 194, 194);
+quad(200, 327, 200, 142, 185, 142, 190, 305);
+fill(212, 212, 212);
+quad(214, 145, 200, 142, 200, 327, 210, 305);
+fill(173, 173, 173);
+triangle(200, 199, 200, 143, 184, 141);
+fill(194, 194, 194);
+triangle(200, 144, 200, 196, 215, 146);
+
+//finger/hand guard
+stroke(0, 0, 0);
+noFill();
+strokeWeight(17);
+arc(200, 121, 100, 40, 0, 180);
+stroke(48, 48, 48);
+strokeWeight(8);
+arc(194, 120, 93, 48, 84, 169);
+noStroke();
+fill(204, 14, 0);
+ellipse(150, 123, 10, 10);
+ellipse(250, 123, 10, 10);
+
+//pommel
+stroke(0, 0, 0);
+strokeWeight(10);
+fill(204, 14, 0);
+ellipse(200, 70, 25, 25);
+noFill();
+strokeWeight(5);
+stroke(48, 48, 48);
+arc(199, 70, 25, 25, -282, -178);
+
+filter(BLUR, 0.8);
