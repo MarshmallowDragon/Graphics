@@ -1,0 +1,89 @@
+/**^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon*|
+\**^^^^^***^^^^^***^^^^^**/
+
+background(77, 77, 143);
+
+fill(255, 255, 255);
+noStroke();
+pushMatrix();
+rotate(42);
+rect (128, -62, 140, 120);
+popMatrix();
+
+noStroke();//top part of heart
+fill(214, 0, 78);
+ellipse(160, 170, 100, 100);
+ellipse(260, 170, 100, 100);
+rect(110, 165, 200, 200);
+
+pushMatrix();//background-colored ellipses to create heart shape
+rotate(60);
+fill(77, 77, 143);
+ellipse(318, 42, 243, 115);
+popMatrix();
+
+pushMatrix();
+rotate(-60);
+ellipse(-116, 401, 244, 115);
+popMatrix();
+
+stroke(77, 77, 143);//smoother lines
+strokeWeight(3);
+noFill();
+arc(158, 168, 100, 195, 118, 196);
+arc(261, 187, 100, 100, 4, 61);
+
+noStroke();
+
+
+pushMatrix();//leftside fixer
+rotate(-40);
+fill(214, 0, 78);
+ellipse(-22, 281, 64, 148);
+popMatrix();
+
+stroke(255, 255, 255);
+strokeWeight(6);
+line(107, 170, 110, 140);
+strokeWeight(3);
+point(108, 173);
+strokeWeight(2);
+point(109, 174);
+noStroke();
+
+pushMatrix();//rightside fixer
+rotate(40);
+fill(214, 0, 78);
+ellipse(343, 9, 64, 148);
+popMatrix();
+
+
+bezier(140, 240, 335, 428, 74, 427, 288, 175);
+
+
+fill(255, 255, 255);//fingers
+ellipse(182, 289, 25, 35);
+
+pushMatrix();
+rotate(-20);
+ellipse(101, 365, 25, 40);
+popMatrix();
+
+pushMatrix();
+rotate(-45);
+ellipse(-28, 372, 25, 30);
+popMatrix();
+
+pushMatrix();
+rotate(-55);
+ellipse(-56, 366, 25, 28);
+popMatrix();
+
+//thumb
+stroke(255, 255, 255);
+strokeWeight(35);
+noFill();
+arc(196, 170, 62, 100, -40, 13);
+
+
