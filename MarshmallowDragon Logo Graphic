@@ -1,0 +1,96 @@
+/**^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon *|
+\**^^^^^***^^^^^***^^^^^**/
+
+//Thank you to my little brother Z for helping me design this!!!
+//If anyone has any suggestions on how to improve (code, presentation, anything)? I'd love to hear them. :)
+
+background(110, 145, 110);
+
+translate(43, 39);
+fill(255, 243, 229);
+stroke(235, 191, 144);
+strokeWeight(2);
+
+beginShape();//backwing
+vertex(213, 38);
+bezierVertex(223, 7, 229, -5, 260, -20);
+bezierVertex(168, -25, 106, 8, 53, 34);
+bezierVertex(65, 31, 76, 31, 99, 28);
+bezierVertex(74, 38, 58, 48, 31, 68);
+bezierVertex(59, 55, 77, 48, 103, 47);
+bezierVertex(49, 84, 29, 136, 45, 236);
+bezierVertex(46, 230, 51, 202, 73, 167);
+endShape();
+
+beginShape();//right tail fin
+vertex(147, 328);
+bezierVertex(150, 323, 107, 308, 81, 253);
+bezierVertex(89, 262, 86, 290, 93, 307);
+bezierVertex(103, 313, 111, 306, 147, 328);
+endShape();
+
+beginShape();//left tail fin
+vertex(75, 263);
+bezierVertex(55, 284, 59, 297, 68, 354);
+bezierVertex(80, 318, 78, 324, 90, 308);
+bezierVertex(84, 288, 80, 288, 75, 263);
+endShape();
+
+beginShape();//body/paw/tail
+vertex(94, 315);
+bezierVertex(51, 244, 48, 18, 243, 31);
+bezierVertex(244, 36, 267, 94, 244, 105);
+bezierVertex(218, 115, 210, 93, 212, 93);
+bezierVertex(204, 99, 186, 109, 178, 108);
+bezierVertex(159, 110, 46, 100, 94, 315);
+endShape();
+
+beginShape();//head
+vertex(195, 12);
+bezierVertex(278, 25, 307, 39, 313, 67);
+bezierVertex(284, 87, 278, 81, 273, 82);
+bezierVertex(256, 79, 239, 74, 236, 69);
+bezierVertex(228, 64, 214, 73, 209, 79);
+bezierVertex(215, 71, 222, 58, 235, 57);
+bezierVertex(231, 53, 220, 46, 204, 52);
+bezierVertex(217, 40, 219, 37, 241, 41);
+bezierVertex(224, 9, 195, 14, 195, 12);
+endShape();
+
+fill(235, 191, 144);
+beginShape();//eye
+vertex(265, 42);
+bezierVertex(277, 42, 286, 51, 289, 58);
+bezierVertex(274, 64, 269, 51, 270, 44);
+endShape();
+
+
+noFill();
+bezier(186, 46, 183, -1, 198, -18, 228, -33);
+noStroke();
+fill(255, 243, 229);
+rect(156, 31, 29, 9);
+stroke(235, 191, 144);
+
+beginShape();//underwing
+vertex(172, 126);
+bezierVertex(190, 142, 184, 143, 208, 161);
+bezierVertex(178, 170, 167, 177, 161, 209);
+bezierVertex(128, 219, 119, 229, 113, 266);
+bezierVertex(114, 255, 110, 270, 102, 215);
+endShape();
+
+beginShape();//frontwing
+vertex(228, -33);
+bezierVertex(137, 10, 169, 105, 201, 134);
+bezierVertex(175, 139, 140, 160, 139, 193);
+bezierVertex(126, 189, 104, 204, 107, 244);
+bezierVertex(79, 91, 90, 3, 228, -33);
+endShape();
+
+fill(0, 0, 0);
+textSize(30);
+var f = createFont("FangSong");
+textFont(f);
+text("MarshmallowDragon", 33, 137, 400, 400);
