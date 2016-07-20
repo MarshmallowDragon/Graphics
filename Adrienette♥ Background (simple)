@@ -1,0 +1,91 @@
+/**^^^^^***^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon Studios *|
+\**^^^^^***^^^^^***^^^^^***^^^^^**/
+
+//Inspired by my favorite French Animated TV show
+//Nts:use for future graphics pic...
+
+/**You may use this background with credit!
+
+Credit should look like:
+Background Graphics by MarshmallowDragon Studios:
+https://www.khanacademy.org/computer-programming/background-adrienette/4724753702453248
+**/
+
+var duotoneBack = function(x, y){
+    noStroke();
+    for(var i = 0; i < width && i < height; i ++) {
+    fill(i*0.578, i * 0.6765, i * 0.867);
+    rect(0, 1*i, 400, 1);
+}
+};
+var Astripes = function(x, y){
+    
+    noStroke();
+    
+    fill(255, 244, 31, 100);
+    rect (290, 0, 30, 400);
+    
+    fill(143, 255, 150, 100);
+    rect (325, 0, 30, 400);
+    
+    fill(216, 158, 255, 100);
+    rect (360, 0, 30, 400);
+
+};
+var fPokaDots = function(x, y){
+    
+    var dotx = 20;
+    var doty = 20;
+    var mdoty = 35;
+    var adotx = 20;
+    var fadeColor = 150;
+        
+    while (dotx < 300){
+        
+        noStroke();
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx, doty, 20, 20);
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx-20, doty+35, 20, 20);
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx, doty+70, 20, 20);
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx-20, doty+105, 20, 20);
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx, doty+140, 20, 20);
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx-20, doty+175, 20, 20);
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx, doty+210, 20, 20);
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx-20, doty+245, 20, 20);
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx, doty+280, 20, 20);
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx-20, doty+310, 20, 20);
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx, doty+340, 20, 20);
+        
+        fill(255, 214, 255, fadeColor);
+        ellipse (dotx-20, doty+375, 20, 20);
+        
+        dotx += 40;
+        }
+        
+};
+
+duotoneBack(0, 0);
+Astripes(0, 0);
+fPokaDots(0, 0);
