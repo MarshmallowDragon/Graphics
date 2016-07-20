@@ -1,0 +1,118 @@
+/**^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon *|
+\**^^^^^***^^^^^***^^^^^**/
+
+
+/**RESULTS ARE OUT!! HERE'S THE LINK: https://www.khanacademy.org/computer-programming/results-for-contest-eat-your-marshmallows/3511123700**/
+
+  
+/**  I’ve been programming for X years and have completed Y of Intro to JS.
+TO DO: Fill that out^^**/
+
+/*
+
+I recently had a conversation with a friend (you know who you are) about tons of different ways to eat marshmallows! And this idea stemmed from that.
+
+  So for this contest, give me your wackiest, funniest, yummiest, visibly delectable and most creative way of eating marshmallows!
+
+  Put your entry in a spin-off and I will judge on clean, commented code, creativity, and presentation.
+*/
+/**
+Prizes are:
+  
+  1st Place: I will create a pixel art for you of your choosing.
+  
+  2nd Place: I will review and give advice for any one of your programs of your choosing.
+  
+  3rd Place: I will mention one of your programs (of your choosing) in my next pixel art or graphic picture.
+  
+  There are three categories: Beginner, Intermediate, and Advanced.
+
+     Deadline is March 15th! Results will be posted the weekend after.
+  
+**/
+//MOST IMPORTANTLY!! HAVE FUN! X3
+
+var mouth = function(){
+
+background(255, 240, 204);
+
+strokeWeight(36);
+stroke(255, 61, 61);
+fill(255, 148, 148);
+ellipse(200, 201, 506, 319);
+
+strokeWeight(20);
+
+noFill();
+stroke(255, 185, 127);
+arc(200, 371, 364, 84, 23, 165);
+
+strokeWeight(38);
+stroke(255, 255, 255);
+arc(200, 205, 464, 255, 202, 332);
+
+strokeWeight(20);
+
+stroke(222, 222, 222);
+arc(171, 160, 351, 156, 209, 250);
+
+fill(255, 102, 102);
+stroke(255, 97, 97);
+beginShape();
+vertex(33,288); 
+bezierVertex(144,165,244,100,372,287); 
+bezierVertex(317,319,171,376,31,288); 
+endShape();
+
+};
+
+var marshmallow = function(x, y){
+
+pushMatrix();
+
+rotate(-15);
+translate(-50, 30);
+
+    stroke(125, 125, 125, 175);
+    strokeWeight(3);
+    fill(252, 252, 252);
+    rect(x-70, y-70, 140, 175, 30);
+    
+    stroke(133, 133, 133);
+    ellipse (x, y-54, 135, 50);
+    noStroke();
+    
+    fill(255, 163, 250);
+    ellipse (x-30, y+7, 30, 8);
+    ellipse (x+30, y+7, 30, 8);
+    
+    noFill();
+    strokeWeight(7);
+    stroke(0, 0, 0);
+    arc(236, 253, 58, 100, -128, -77);
+    arc(166, 253, 58, 100, -103, -50);
+    
+    beginShape(); 
+    vertex(224, 241); 
+    bezierVertex(237, 199, 227, 264, 190, 235); 
+    bezierVertex(165, 204, 219, 322, 224, 241); 
+    endShape();
+
+
+popMatrix();
+};
+
+var context = function(){
+    
+    fill(0, 0, 0);
+textSize(26);
+text("Contest: Eat Your Marshmallows!", 10, 10, 400, 400);
+text("Deadline: March 15th", 80, 370, 400, 400);
+
+};
+
+
+mouth();
+marshmallow(200, 200);
+context();
