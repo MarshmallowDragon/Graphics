@@ -2,6 +2,31 @@
   |* MarshmallowDragon *|
 \**^^^^^***^^^^^***^^^^^**/
 
+/**PLEASE READ BELOW**/
+
+/**Hey subscribers!! 
+ * 
+ * I don't have facebook, but I'm wondering if any of you all do? 
+ * 
+ * If you do, I could really use a huge favour. 
+ * 
+ * To explain, my family is a big supporter of men and women who have been diagnosed with FASD (Fetal Alcohol Spectrum Disorder) who are trying to make something great of themselves. We support these people mainly because _we_ have family who struggle through that same disorder (a mental problem that makes it extremely difficult to understand simple concepts and control emotions). 
+ * 
+ * I need your help (if you have a facebook) to vote for this hard-working man, Andrew P., (who has the same mental disorder as my siblings) who has been striving for excellence. This is his last time in the running for the cover of Toyota's Runner's World Cover Contest and he has tried _so hard_ to pursue his dream and work through the physical and mentain hardships of his disability. 
+ * 
+ * He deserves to win. 
+ * 
+ * There's only four days left to vote, so please join my family in voting for this champion. 
+ * 
+ * Here is a link that will send you directly to the voting page!
+ * 
+ * http://coversearch.runnersworld.com/entry/1/
+ * 
+ * Thanks so much for your time in reading this message. Let's make his dream come true! 
+**/
+
+//the graphic :)
+var EVERYTHING = function(){
 background(207, 255, 204);
 
 var andrew = function(){
@@ -190,3 +215,7 @@ andrew();
 textfa();
 crownshadow();
 champcrown();
+};
+
+EVERYTHING();
+println("Here's the link again if you missed it in the description! :) http://coversearch.runnersworld.com/entry/1/");
