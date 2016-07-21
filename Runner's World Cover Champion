@@ -169,7 +169,9 @@ textSize(33.5);
 text("Vote for me! \n\n\n\n\n\n\n\n\n  Andrew P.", 113, 9, 400, 400);
 textSize(25);
 text("#1", 186, 174, 100, 100);
+
 };
+
 var champcrown = function(){
 fill(189, 172, 61);
 noStroke();
@@ -193,6 +195,7 @@ vertex(59,-116);
 endShape();
 popMatrix();
 };
+
 var crownshadow = function(){
 fill(107, 107, 107, 50);
 noStroke();
@@ -218,4 +221,3 @@ champcrown();
 };
 
 EVERYTHING();
-println("Here's the link again if you missed it in the description! :) http://coversearch.runnersworld.com/entry/1/");
