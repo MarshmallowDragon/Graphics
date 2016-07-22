@@ -1,0 +1,62 @@
+/**^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon *|
+\**^^^^^***^^^^^***^^^^^**/
+
+
+background(29, 43, 97);
+fill(230, 230, 230);
+stroke(230, 230, 230);
+
+ellipse(250, 155, 115, 150);
+ellipse(100, 200, 105, 105);
+ellipse(400, 200, 105, 105);
+
+noStroke();
+fill(29, 43, 97);
+ellipse(70, 185, 100, 100);
+ellipse(430, 185, 100, 100);
+
+noFill();
+stroke(230, 230, 230);
+strokeWeight(6);
+arc(145, 415, 163, 72, 246, 327);
+arc(350, 415, 163, 72, -144, -59);
+
+
+for (var y = 324; y < 376; y+=0.3){
+noFill();
+strokeWeight(1);
+stroke(230, 230, 230);
+arc(250, y, 386, 113, 202, 337);
+}
+
+noFill();
+stroke(230, 230, 230);
+strokeWeight(3);
+arc(118, 467, 205, 108, 266, 331);
+arc(384, 468, 205, 108, 210, 276);
+fill(230);
+ellipse(158, 444, 40, 40);
+ellipse(349, 444, 40, 40);
+
+
+var sparkle = function(x, y, r, s){
+
+stroke(230, 230, 230);
+strokeWeight(3);
+
+pushMatrix();
+rotate(r);
+scale(s);
+line(x+111, y+106, x+103, y+102);
+line(x+116, y+102, x+114, y+92);
+line(x+122, y+106, x+128, y+101);
+line(x+113, y+113, x+107, y+119);
+line(x+121, y+113, x+127, y+119);
+popMatrix();
+
+};
+
+//sparkle(53, 0, 10, 0.88);
+
+filter(BLUR, 0.6);
