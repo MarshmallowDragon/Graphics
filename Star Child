@@ -60,7 +60,7 @@ endShape();
 noStroke();
 fill(92, 92, 92, 150);
 beginShape();
-curveVertex(55, 139); 
+curveVertex(73, 139); 
 curveVertex(4, 151); 
 curveVertex(-17, 132);
 curveVertex(3, 139); 
@@ -71,6 +71,8 @@ popMatrix();
 
 stroke(230);
 noFill();
+arc(224, 497, 31, 103, -10, 52);
+stroke(92, 92, 92, 150);
 arc(224, 497, 31, 103, -10, 52);
 
 var sparkle = function(x, y, r, s){
