@@ -4,6 +4,13 @@
 
 
 background(29, 43, 97);
+
+
+pushMatrix();
+
+translate(0, -30);
+
+
 fill(230, 230, 230);
 stroke(230, 230, 230);
 
@@ -27,7 +34,7 @@ for (var y = 324; y < 376; y+=0.3){
 noFill();
 strokeWeight(1);
 stroke(230, 230, 230);
-arc(250, y, 386, 113, 202, 337);
+arc(250, y, 398, 123, 203, 337);
 }
 
 noFill();
@@ -39,6 +46,32 @@ fill(230);
 ellipse(158, 444, 40, 40);
 ellipse(349, 444, 40, 40);
 
+pushMatrix();
+translate(250, 407);
+beginShape();
+curveVertex(3, 139); 
+curveVertex(29, 127); 
+curveVertex(6, 152); 
+curveVertex(-17, 132);
+curveVertex(3, 139); 
+curveVertex(29, 127);
+curveVertex(6, 152); 
+endShape();
+noStroke();
+fill(92, 92, 92, 150);
+beginShape();
+curveVertex(55, 139); 
+curveVertex(4, 151); 
+curveVertex(-17, 132);
+curveVertex(3, 139); 
+curveVertex(6, 152); 
+curveVertex(-17, 132);
+endShape();
+popMatrix();
+
+stroke(230);
+noFill();
+arc(224, 497, 31, 103, -10, 52);
 
 var sparkle = function(x, y, r, s){
 
@@ -60,3 +93,7 @@ popMatrix();
 //sparkle(53, 0, 10, 0.88);
 
 filter(BLUR, 0.6);
+
+
+
+popMatrix();
