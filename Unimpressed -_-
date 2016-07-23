@@ -1,0 +1,37 @@
+/**^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon *|
+\**^^^^^***^^^^^***^^^^^**/
+
+/// Just a very unimpressed vent. -_-
+
+
+background(213, 231, 237);
+
+noStroke();
+fill(153, 153, 153, 50);
+triangle(0, 0, 400, 400, 0, 400);
+
+rectMode(CENTER);
+stroke(255, 255, 255);
+strokeWeight(15);
+fill(56, 56, 56);
+rect(200, 200, 250, 150);
+line(200, 125, 200, 273);
+
+for(var y = 155; y < 246; y+=10){
+noFill();
+stroke(255, 255, 255);
+strokeWeight(4);
+rect(200, y, 240, 50);
+stroke(74, 74, 74, 50);
+rect(200, y+3, 240, 50);
+}
+
+noStroke();
+fill(143, 143, 143, 50);
+triangle(0, 0, 400, 400, 0, 400);
+
+fill(0, 0, 0);
+noStroke();
+arc(140, 170, 40, 30, 0, 180);
+arc(260, 170, 40, 30, 0, 180);
