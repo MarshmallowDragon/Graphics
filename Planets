@@ -1,0 +1,52 @@
+/**^^^^^***^^^^^***^^^^^**\
+  |* MarshmallowDragon *|
+\**^^^^^***^^^^^***^^^^^**/
+
+//set canvas width to 500 and height to 600
+
+background(71, 66, 110);
+
+
+//20 minutes...
+{
+var rosa = function(){fill(255, 38, 136);};
+var teal = function(){fill(0, 255, 213);};
+var teals = function(){stroke(0, 255, 213);};
+var gelb = function(){fill(240, 184, 115);};
+
+noStroke();
+
+fill(165, 140, 189);
+ellipse(144, 197, 100, 100);
+
+gelb();
+ellipse(380, 205, 55, 55);
+
+rosa();
+ellipse(250, 300, 250, 250);
+
+teals();
+strokeWeight(1.05);
+fill(74, 47, 105);
+ellipse(430, 370, 50, 50);
+
+noStroke();
+teal();
+ellipse(500, 0, 135, 135);
+
+fill(42, 224, 188);
+ellipse(140, 475, 30, 30);
+
+rosa();
+ellipse(90, 420, 40, 40);
+
+gelb();
+ellipse(65, 530, 20, 20);
+
+fill(250, 166, 127);
+ellipse(60, 300, 22, 22);
+
+stroke(189, 40, 154);
+strokeWeight(4);
+point(50, 230);
+}
