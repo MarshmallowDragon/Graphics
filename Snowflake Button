@@ -1,0 +1,30 @@
+//ehhhhhhh, i don't really know if I like this... :/
+
+background(184, 184, 184);
+
+noStroke();
+
+fill(138, 138, 138);
+ellipse(196, 204, 200, 200);
+
+fill(219, 254, 255);
+ellipse(200, 200, 200, 200);
+
+noFill();
+stroke(126, 124, 194);
+strokeWeight(3);
+ellipse(200, 200, 198, 198);
+stroke(155, 153, 207);
+ellipse(200, 200, 190, 190);
+strokeWeight(2);
+stroke(178, 178, 255);
+ellipse(200, 200, 180, 180);
+
+textSize(200);
+fill(119, 119, 153);
+text("❄", 110, 125, 400, 400);
+
+fill(102, 102, 102, 50);
+noStroke();
+arc(200, 200, 200, 200, 32, 209);
+
