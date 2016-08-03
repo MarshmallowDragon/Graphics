@@ -7,16 +7,25 @@
 background(71, 66, 110);
 
 
-//20 minutes...
-{
 var rosa = function(){fill(255, 38, 136);};
 var teal = function(){fill(0, 255, 213);};
 var teals = function(){stroke(0, 255, 213);};
 var gelb = function(){fill(240, 184, 115);};
+var gelbs = function(){stroke(240, 184, 115);};
+var lila = function(){fill(165, 140, 189);};
+var lilas = function(){stroke(165, 140, 189);};
 
 noStroke();
 
-fill(165, 140, 189);
+//blurred stuff
+
+
+
+
+
+
+//central bases for planets
+lila();
 ellipse(144, 197, 100, 100);
 
 gelb();
@@ -49,4 +58,17 @@ ellipse(60, 300, 22, 22);
 stroke(189, 40, 154);
 strokeWeight(4);
 point(50, 230);
-}
+
+lilas();
+strokeWeight(6);
+point(240, 120);
+
+teals();
+point(78, 45);
+
+gelbs();
+strokeWeight(4);
+point(155, 26);
+
+strokeWeight(5.5);
+point(419, 194);
