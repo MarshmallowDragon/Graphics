@@ -8,52 +8,102 @@ background(71, 66, 110);
 
 
 var rosa = function(){fill(255, 38, 136);};
+var rosas = function(){stroke(255, 38, 136, 25);};
 var teal = function(){fill(0, 255, 213);};
 var teals = function(){stroke(0, 255, 213);};
+var teals2 = function(){stroke(0, 255, 213, 25);};
 var gelb = function(){fill(240, 184, 115);};
 var gelbs = function(){stroke(240, 184, 115);};
+var gelbs2 = function(){stroke(240, 184, 115, 25);};
 var lila = function(){fill(165, 140, 189);};
 var lilas = function(){stroke(165, 140, 189);};
+var lilas2 = function(){stroke(165, 140, 189, 25);};
+var shade = function(){fill(82, 82, 82, 50);};
 
-noStroke();
 
 //blurred stuff
 
+pushMatrix();
+
+translate(2, 3);
+
+{
+rosas();
+strokeWeight(30);
+fill(240, 69, 255, 15);
+ellipse(250, 300, 300, 300);
+
+strokeWeight(25);
+lilas2();
+ellipse(144, 197, 120, 120);
+
+strokeWeight(15);
+gelbs2();
+ellipse(380, 205, 60, 60);
+}
+
+teals2();
+ellipse(430, 370, 60, 60);
+
+popMatrix();
+
+filter(BLUR,2);
 
 
+//central bases for planets and shadows and stuff
 
+noStroke();
 
-
-//central bases for planets
+{
+//done
 lila();
 ellipse(144, 197, 100, 100);
+shade();
+arc(144, 197, 100, 100, 40, 220);
 
+//done
 gelb();
 ellipse(380, 205, 55, 55);
+shade();
+arc(380, 205, 55, 55, 40, 220);
 
+//done
 rosa();
 ellipse(250, 300, 250, 250);
+shade();
+arc(250, 300, 250, 250, 40, 220);
+}
 
 teals();
 strokeWeight(1.05);
 fill(74, 47, 105);
 ellipse(430, 370, 50, 50);
-
+shade();
 noStroke();
+arc(430, 370, 50, 50, 40, 220);
+
 teal();
 ellipse(500, 0, 135, 135);
 
 fill(42, 224, 188);
 ellipse(140, 475, 30, 30);
+shade();
+arc(140, 475, 30, 30, 40, 220);
 
 rosa();
 ellipse(90, 420, 40, 40);
+shade();
+arc(90, 420, 40, 40, 40, 220);
 
 gelb();
 ellipse(65, 530, 20, 20);
+shade();
+arc(65, 530, 20, 20, 40, 220);
 
 fill(250, 166, 127);
 ellipse(60, 300, 22, 22);
+shade();
+arc(60, 300, 22, 22, 40, 220);
 
 stroke(189, 40, 154);
 strokeWeight(4);
@@ -72,3 +122,15 @@ point(155, 26);
 
 strokeWeight(5.5);
 point(419, 194);
+
+teals();
+strokeWeight(7);
+point(250, 545);
+
+gelbs();
+strokeWeight(5);
+point(350, 555);
+
+lilas();
+strokeWeight(7);
+point(305, 460);
