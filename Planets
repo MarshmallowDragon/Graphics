@@ -6,7 +6,7 @@
 
 background(71, 66, 110);
 
-
+{
 var rosa = function(){fill(255, 38, 136);};
 var rosas = function(){stroke(255, 38, 136, 25);};
 var teal = function(){fill(0, 255, 213);};
@@ -19,7 +19,7 @@ var lila = function(){fill(165, 140, 189);};
 var lilas = function(){stroke(165, 140, 189);};
 var lilas2 = function(){stroke(165, 140, 189, 25);};
 var shade = function(){fill(82, 82, 82, 50);};
-
+}
 
 //blurred stuff
 
@@ -37,13 +37,27 @@ strokeWeight(25);
 lilas2();
 ellipse(144, 197, 120, 120);
 
-strokeWeight(15);
+strokeWeight(20);
 gelbs2();
 ellipse(380, 205, 60, 60);
-}
 
+strokeWeight(15);
 teals2();
 ellipse(430, 370, 60, 60);
+strokeWeight(20);
+ellipse(500, 0, 160, 160);
+
+strokeWeight(10);
+ellipse(140, 475, 40, 40);
+
+strokeWeight(15);
+rosas();
+ellipse(90, 420, 50, 50);
+
+strokeWeight(10);
+gelbs2();
+ellipse(65, 530, 30, 30);
+}
 
 popMatrix();
 
@@ -72,8 +86,8 @@ rosa();
 ellipse(250, 300, 250, 250);
 shade();
 arc(250, 300, 250, 250, 40, 220);
-}
 
+//done
 teals();
 strokeWeight(1.05);
 fill(74, 47, 105);
@@ -82,19 +96,25 @@ shade();
 noStroke();
 arc(430, 370, 50, 50, 40, 220);
 
+
+//done
 teal();
 ellipse(500, 0, 135, 135);
 
+//done
 fill(42, 224, 188);
 ellipse(140, 475, 30, 30);
 shade();
 arc(140, 475, 30, 30, 40, 220);
+}
 
+//done
 rosa();
 ellipse(90, 420, 40, 40);
 shade();
 arc(90, 420, 40, 40, 40, 220);
 
+//done
 gelb();
 ellipse(65, 530, 20, 20);
 shade();
